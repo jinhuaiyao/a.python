@@ -87,3 +87,6 @@ Traceback (most recent call last):
 TypeError: EditProfileForm.__init__() missing 1 required positional argument: 'original_username'
 2022-01-23 18:06:54,091 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:33]
 2022-01-23 20:12:33,645 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/python_flask/microblog/app/__init__.py:33]
+2022-01-28 16:06:40,962 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:33]
+2022-01-28 16:08:49,898 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:33]
+2022-01-28 16:08:55,602 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:33]
