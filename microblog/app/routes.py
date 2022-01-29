@@ -21,6 +21,11 @@ from app.forms import EditTIDForm
 
 import os, string
 
+from app.forms import EmptyForm 
+
+
+
+
 @app.route('/')
 
 @app.route('/index')
@@ -91,7 +96,8 @@ def user(username):
         {'author': user, 'body': 'Test post #1'},
         {'author': user, 'body': 'Test post #2'}
     ]
-    return render_template('user.html', user=user, posts=posts)
+    form = EmptyForm()
+    return render_template('user.html', user=user, posts=posts, form=form)
 
 
 @app.before_request
@@ -125,11 +131,55 @@ def edit_profile():
 def unarchive_tid():
     form = EditTIDForm()
     if form.validate_on_submit():
-        #current_user.username = form.tid_list
         print(form.tid_list.data)
         f = open("unarchive_tid.lst", "w")
         f.write(str(form.tid_list.data))
         f.close()
 
-        flash('Your changes have been saved.')
+        tid_list = str(form.tid_list.data)
+
+        for x in str(tid_list):
+            print(x)
+
+        flash(str(form.tid_list.data))
     return render_template('unarchive_tid.html', title='Unarchive TID', form=form)
+
+
+
+@app.route('/follow/<username>', methods=['POST'])
+@login_required
+def follow(username):
+    form = EmptyForm()
+    if form.validate_on_submit():
+        user = User.query.filter_by(username=username).first()
+        if user is None:
+            flash('User {} not found.'.format(username))
+            return redirect(url_for('index'))
+        if user == current_user:
+            flash('You cannot follow yourself!')
+        current_user.follow(user)
+        db.session.commit()
+        flash('You are following {}!'.format(username))
+        return redirect(url_for('user', username=username))
+    else:
+        return redirect(url_for('index'))
+
+
+@app.route('/unfollow/<username>', methods=['POST'])
+@login_required
+def unfollow(username):
+    form = EmptyForm()
+    if form.validate_on_submit():
+        user = User.query.filter_by(username=username).first()
+        if user is None:
+            flash('User {} not found.'.format(username))
+            return redirect(url_for('index'))
+        if user == current_user:
+            flash('You cannot unfollow yourself!')
+            return redirect(url_for('user', username=username))
+        current_user.unfollow(user)
+        db.session.commit()
+        flash('You are not following {}.'.format(username))
+        return redirect(url_for('user', username=username))
+    else:
+        return redirect(url_for('index'))

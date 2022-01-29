@@ -48,3 +48,7 @@ class EditProfileForm(FlaskForm):
 class EditTIDForm(FlaskForm):
     tid_list = TextAreaField('Input TID', validators=[Length(min=0, max=999)])
     submit = SubmitField('Submit')
+
+
+class EmptyForm(FlaskForm):
+    submit = SubmitField('Submit')
