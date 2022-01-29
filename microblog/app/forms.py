@@ -44,3 +44,7 @@ class EditProfileForm(FlaskForm):
             if user is not None:
                 raise ValidationError('Please use a different username.')
         
+
+class EditTIDForm(FlaskForm):
+    tid_list = TextAreaField('Input TID', validators=[Length(min=0, max=999)])
+    submit = SubmitField('Submit')

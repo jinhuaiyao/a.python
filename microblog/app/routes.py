@@ -17,7 +17,9 @@ from datetime import datetime
 
 from app.forms import EditProfileForm
 
+from app.forms import EditTIDForm
 
+import os, string
 
 @app.route('/')
 
@@ -116,3 +118,18 @@ def edit_profile():
         form.username.data = current_user.username
         form.about_me.data = current_user.about_me
     return render_template('edit_profile.html', title='Edit Profile', form=form)
+
+
+
+@app.route('/app/unarchive_tid', methods=['GET', 'POST'])
+def unarchive_tid():
+    form = EditTIDForm()
+    if form.validate_on_submit():
+        #current_user.username = form.tid_list
+        print(form.tid_list.data)
+        f = open("unarchive_tid.lst", "w")
+        f.write(str(form.tid_list.data))
+        f.close()
+
+        flash('Your changes have been saved.')
+    return render_template('unarchive_tid.html', title='Unarchive TID', form=form)
