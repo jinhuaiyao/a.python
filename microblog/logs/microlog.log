@@ -38,3 +38,8 @@ TypeError: 'module' object is not callable
 2022-01-29 19:55:54,667 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:33]
 2022-01-29 20:02:35,779 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:33]
 2022-01-29 20:03:13,085 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:33]
+2022-01-29 21:11:27,363 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:33]
+2022-01-29 21:16:04,908 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:33]
+2022-01-29 21:17:29,538 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:33]
+2022-01-29 21:18:10,595 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:33]
+2022-01-29 21:19:27,941 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:33]
