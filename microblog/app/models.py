@@ -21,7 +21,7 @@ class User(UserMixin, db.Model):
     posts = db.relationship('Post', backref='author', lazy='dynamic')
 
     about_me = db.Column(db.String(140))
-    last_seen = db.Column(db.DateTime, default=datetime.utcnow)
+    last_seen = db.Column(db.DateTime, default=datetime.now)
 
     followed = db.relationship(
         'User', secondary=followers,
@@ -76,12 +76,12 @@ class User(UserMixin, db.Model):
         except:
             return
         return User.query.get(id)
-        
-            
+
+
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)      
     body = db.Column(db.String(140))
-    timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+    timestamp = db.Column(db.DateTime, index=True, default=datetime.now)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
     def __repr__(self):

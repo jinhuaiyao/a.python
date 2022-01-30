@@ -1,0 +1,113 @@
+2022-01-30 16:39:20,026 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:36]
+2022-01-30 16:39:30,455 ERROR: Exception on /edit_profile [POST] [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/routes.py", line 134, in edit_profile
+    if form.validate_on_submit():
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/form.py", line 329, in validate
+    return super().validate(extra)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/form.py", line 146, in validate
+    if not field.validate(self, extra):
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/fields/core.py", line 242, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/fields/core.py", line 262, in _run_validation_chain
+    validator(form, self)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/forms.py", line 44, in validate_username
+    if username.data != self.original_username:
+AttributeError: 'EditProfileForm' object has no attribute 'original_username'
+2022-01-30 16:43:56,522 ERROR: Exception on /edit_profile [POST] [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/routes.py", line 134, in edit_profile
+    if form.validate_on_submit():
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/form.py", line 329, in validate
+    return super().validate(extra)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/form.py", line 146, in validate
+    if not field.validate(self, extra):
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/fields/core.py", line 242, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/fields/core.py", line 262, in _run_validation_chain
+    validator(form, self)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/forms.py", line 44, in validate_username
+    if username.data != self.original_username:
+AttributeError: 'EditProfileForm' object has no attribute 'original_username'
+2022-01-30 16:44:45,254 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:36]
+2022-01-30 16:45:00,027 ERROR: Exception on /edit_profile [POST] [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/routes.py", line 134, in edit_profile
+    if form.validate_on_submit():
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/form.py", line 329, in validate
+    return super().validate(extra)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/form.py", line 146, in validate
+    if not field.validate(self, extra):
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/fields/core.py", line 242, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/fields/core.py", line 262, in _run_validation_chain
+    validator(form, self)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/forms.py", line 44, in validate_username
+    if username.data != self.original_username:
+AttributeError: 'EditProfileForm' object has no attribute 'original_username'
+2022-01-30 16:54:11,956 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:36]
+2022-01-30 16:54:22,790 ERROR: Exception on /edit_profile [POST] [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/routes.py", line 134, in edit_profile
+    if form.validate_on_submit():
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/form.py", line 329, in validate
+    return super().validate(extra)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/form.py", line 146, in validate
+    if not field.validate(self, extra):
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/fields/core.py", line 242, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/fields/core.py", line 262, in _run_validation_chain
+    validator(form, self)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/forms.py", line 51, in validate_email
+    if email.data != self.original_email:
+AttributeError: 'EditProfileForm' object has no attribute 'original_email'
+2022-01-30 16:55:13,155 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:36]
+2022-01-30 17:00:01,585 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:36]
