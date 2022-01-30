@@ -8,6 +8,7 @@ from flask_mail import Mail
 
 from flask_bootstrap import Bootstrap
 
+from flask_moment import Moment
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -39,3 +40,4 @@ if not app.debug:
     app.logger.info('Microblog startup')
 
 bootstrap = Bootstrap(app)
+moment = Moment(app)

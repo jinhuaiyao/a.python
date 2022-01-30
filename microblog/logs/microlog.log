@@ -82,3 +82,5 @@ sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed
 2022-01-30 19:19:32,476 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:39]
 2022-01-30 19:22:09,227 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:39]
 2022-01-30 19:26:39,248 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:39]
+2022-01-30 20:10:24,213 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:40]
+2022-01-30 20:12:06,519 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:40]
