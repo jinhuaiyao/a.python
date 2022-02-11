@@ -1,4 +1,4 @@
-2022-01-30 17:07:30,140 ERROR: Exception on /edit_profile [POST] [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py:1457]
+2022-01-30 17:14:12,681 ERROR: Exception on /edit_profile [POST] [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py:1457]
 Traceback (most recent call last):
   File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1802, in _execute_context
     self.dialect.do_execute(
@@ -66,4 +66,42 @@ sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed
 [SQL: UPDATE user SET username=? WHERE user.id = ?]
 [parameters: ('deng', 3)]
 (Background on this error at: https://sqlalche.me/e/14/gkpj)
-2022-01-30 17:13:57,083 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:36]
+2022-01-30 17:15:08,320 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:36]
+2022-01-30 17:16:03,664 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:36]
+2022-01-30 17:37:30,125 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:40]
+2022-01-30 17:40:16,442 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:39]
+2022-01-30 17:46:05,866 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:39]
+2022-01-30 17:56:39,753 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:39]
+2022-01-30 18:50:08,525 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:39]
+2022-01-30 18:58:14,290 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:39]
+2022-01-30 18:58:49,197 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:39]
+2022-01-30 19:09:48,529 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:39]
+2022-01-30 19:11:02,528 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:39]
+2022-01-30 19:14:11,045 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:39]
+2022-01-30 19:18:12,825 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:39]
+2022-01-30 19:19:32,476 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:39]
+2022-01-30 19:22:09,227 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:39]
+2022-01-30 19:26:39,248 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:39]
+2022-01-30 20:10:24,213 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:40]
+2022-01-30 20:12:06,519 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:40]
+2022-02-02 20:54:40,559 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:44]
+2022-02-04 19:44:05,789 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:44]
+2022-02-04 19:44:11,487 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:44]
+2022-02-04 20:04:18,671 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:44]
+2022-02-04 20:04:23,757 ERROR: Exception on /index [GET] [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1514, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1857, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/routes.py", line 139, in before_request
+    g.locale = str(get_locale())
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask_babel/__init__.py", line 226, in get_locale
+    rv = babel.locale_selector_func()
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py", line 53, in get_locale
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
+KeyError: 'LANGUAGES'

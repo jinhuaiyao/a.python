@@ -1,10 +1,10 @@
-2022-01-30 17:00:45,807 ERROR: Exception on /edit_profile [POST] [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py:1457]
+2022-01-30 17:07:30,140 ERROR: Exception on /edit_profile [POST] [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py:1457]
 Traceback (most recent call last):
   File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1802, in _execute_context
     self.dialect.do_execute(
   File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
     cursor.execute(statement, parameters)
-sqlite3.IntegrityError: UNIQUE constraint failed: user.email
+sqlite3.IntegrityError: UNIQUE constraint failed: user.username
 
 The above exception was the direct cause of the following exception:
 
@@ -62,8 +62,8 @@ Traceback (most recent call last):
     self.dialect.do_execute(
   File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
     cursor.execute(statement, parameters)
-sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.email
-[SQL: UPDATE user SET email=? WHERE user.id = ?]
-[parameters: ('deng@a.com', 3)]
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.username
+[SQL: UPDATE user SET username=? WHERE user.id = ?]
+[parameters: ('deng', 3)]
 (Background on this error at: https://sqlalche.me/e/14/gkpj)
-2022-01-30 17:07:16,398 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:36]
+2022-01-30 17:13:57,083 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:36]
