@@ -24,3 +24,6 @@ KeyError: 'LANGUAGES'
 2022-02-11 11:21:56,672 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:44]
 2022-02-11 11:22:58,278 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:44]
 2022-02-11 11:57:25,981 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:44]
+2022-02-11 13:14:42,118 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:44]
+2022-02-11 13:21:26,836 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:44]
+2022-02-11 13:22:46,426 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:44]
