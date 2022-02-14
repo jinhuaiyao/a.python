@@ -5,7 +5,7 @@ from flask_login import current_user, login_required
 from flask_babel import _, get_locale
 from langdetect import detect, LangDetectException
 from app import db
-from app.main.forms import EditProfileForm, EmptyForm, PostForm
+from app.main.forms import EditProfileForm, EmptyForm, PostForm, EditTIDForm
 from app.models import User, Post
 from app.translate import translate
 from app.main import bp
@@ -141,3 +141,21 @@ def translate_text():
     return jsonify({'text': translate(request.form['text'],
                                       request.form['source_language'],
                                       request.form['dest_language'])})
+
+
+@bp.route('/app/unarchive_tid', methods=['GET', 'POST'])
+def unarchive_tid():
+    form = EditTIDForm()
+    if form.validate_on_submit():
+        print(form.tid_list.data)
+        f = open("unarchive_tid.lst", "w")
+        f.write(str(form.tid_list.data))
+        f.close()
+
+        tid_list = str(form.tid_list.data)
+
+        for x in str(tid_list):
+            print(x)
+
+        flash(str(form.tid_list.data))
+    return render_template('unarchive_tid.html', title='Unarchive TID', form=form)
