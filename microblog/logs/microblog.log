@@ -1,121 +1,37 @@
-2022-02-17 14:46:19,677 ERROR: Exception on /favicon.ico [GET] [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py:1457]
+2022-02-22 13:28:27,985 ERROR: Exception on / [POST] [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py:1457]
 Traceback (most recent call last):
   File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
     response = self.full_dispatch_request()
   File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
     rv = self.handle_user_exception(e)
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1514, in full_dispatch_request
-    rv = self.preprocess_request()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1857, in preprocess_request
-    rv = self.ensure_sync(before_func)()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/main/routes.py", line 21, in before_request
-    g.search_form = SearchForm()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
-    return type.__call__(cls, *args, **kwargs)
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/main/forms.py", line 54, in __init__
-    kwargs['formdata'] = request.args
-NameError: name 'request' is not defined
-2022-02-17 14:46:20,069 ERROR: Exception on /index [GET] [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py:1457]
-Traceback (most recent call last):
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1514, in full_dispatch_request
-    rv = self.preprocess_request()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1857, in preprocess_request
-    rv = self.ensure_sync(before_func)()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/main/routes.py", line 21, in before_request
-    g.search_form = SearchForm()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
-    return type.__call__(cls, *args, **kwargs)
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/main/forms.py", line 54, in __init__
-    kwargs['formdata'] = request.args
-NameError: name 'request' is not defined
-2022-02-17 14:46:20,142 ERROR: Exception on /favicon.ico [GET] [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py:1457]
-Traceback (most recent call last):
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1514, in full_dispatch_request
-    rv = self.preprocess_request()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1857, in preprocess_request
-    rv = self.ensure_sync(before_func)()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/main/routes.py", line 21, in before_request
-    g.search_form = SearchForm()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
-    return type.__call__(cls, *args, **kwargs)
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/main/forms.py", line 54, in __init__
-    kwargs['formdata'] = request.args
-NameError: name 'request' is not defined
-2022-02-17 14:46:20,817 ERROR: Exception on /explore [GET] [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py:1457]
-Traceback (most recent call last):
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1514, in full_dispatch_request
-    rv = self.preprocess_request()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1857, in preprocess_request
-    rv = self.ensure_sync(before_func)()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/main/routes.py", line 21, in before_request
-    g.search_form = SearchForm()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
-    return type.__call__(cls, *args, **kwargs)
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/main/forms.py", line 54, in __init__
-    kwargs['formdata'] = request.args
-NameError: name 'request' is not defined
-2022-02-17 14:46:20,926 ERROR: Exception on /favicon.ico [GET] [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py:1457]
-Traceback (most recent call last):
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1514, in full_dispatch_request
-    rv = self.preprocess_request()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1857, in preprocess_request
-    rv = self.ensure_sync(before_func)()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/main/routes.py", line 21, in before_request
-    g.search_form = SearchForm()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
-    return type.__call__(cls, *args, **kwargs)
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/main/forms.py", line 54, in __init__
-    kwargs['formdata'] = request.args
-NameError: name 'request' is not defined
-2022-02-17 14:46:22,057 ERROR: Exception on /user/rjin [GET] [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py:1457]
-Traceback (most recent call last):
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1514, in full_dispatch_request
-    rv = self.preprocess_request()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1857, in preprocess_request
-    rv = self.ensure_sync(before_func)()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/main/routes.py", line 21, in before_request
-    g.search_form = SearchForm()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
-    return type.__call__(cls, *args, **kwargs)
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/main/forms.py", line 54, in __init__
-    kwargs['formdata'] = request.args
-NameError: name 'request' is not defined
-2022-02-17 14:46:22,127 ERROR: Exception on /favicon.ico [GET] [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py:1457]
-Traceback (most recent call last):
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1514, in full_dispatch_request
-    rv = self.preprocess_request()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1857, in preprocess_request
-    rv = self.ensure_sync(before_func)()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/main/routes.py", line 21, in before_request
-    g.search_form = SearchForm()
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
-    return type.__call__(cls, *args, **kwargs)
-  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/main/forms.py", line 54, in __init__
-    kwargs['formdata'] = request.args
-NameError: name 'request' is not defined
-2022-02-17 14:47:28,748 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:84]
-2022-02-17 14:50:25,572 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:84]
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/main/routes.py", line 38, in index
+    db.session.commit()
+  File "<string>", line 2, in commit
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 839, in commit
+    self.session.dispatch.after_commit(self.session)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/sqlalchemy/event/attr.py", line 256, in __call__
+    fn(*args, **kw)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/models.py", line 112, in after_commit
+    add_to_index(obj.__tablename__, obj)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/app/search.py", line 9, in add_to_index
+    current_app.elasticsearch.index(index=index, id=model.id, body=payload)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/elasticsearch/_sync/client/utils.py", line 404, in wrapped
+    return api(*args, **kwargs)
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/elasticsearch/_sync/client/__init__.py", line 2207, in index
+    return self.perform_request(  # type: ignore[return-value]
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/elasticsearch/_sync/client/_base.py", line 286, in perform_request
+    meta, resp_body = self.transport.perform_request(
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/elastic_transport/_transport.py", line 329, in perform_request
+    meta, raw_data = node.perform_request(
+  File "/Users/rjin/OneDrive/MyNotes/a.python/microblog/venv/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 177, in perform_request
+    raise err from None
+elastic_transport.ConnectionError: Connection error caused by: ConnectionError(Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x106663220>: Failed to establish a new connection: [Errno 61] Connection refused))
+2022-02-22 13:29:51,387 INFO: Microblog startup [in /Users/rjin/OneDrive/MyNotes/a.python/microblog/app/__init__.py:84]
