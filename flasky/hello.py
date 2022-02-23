@@ -13,6 +13,8 @@ from wtforms.validators import DataRequired
 import os
 from flask_sqlalchemy import SQLAlchemy
 
+from flask_migrate import Migrate
+
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 
@@ -25,6 +27,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 bootstrap = Bootstrap(app)
 moment = Moment(app)
 db = SQLAlchemy(app)
+migrate = Migrate(app, db)
 
 class Role(db.Model):
     __tablename__ = 'roles'
@@ -33,8 +36,9 @@ class Role(db.Model):
     users = db.relationship('User', backref='role', lazy='dynamic')
 
     def __repr__(self):
-        return '<Role %r>' % self.name
-
+        r = str(self.id) + self.name
+        #return '<Role %r %r>' % self.id % self.name -- syntax not working
+        return r
 
 class User(db.Model):
     __tablename__ = 'users'
@@ -96,3 +100,6 @@ def index():
 def user(name):
     return render_template('user.html',name=name, current_time=datetime.utcnow())
 
+@app.shell_context_processor
+def make_shell_context():
+    return dict(db=db, User=User, Role=Role, monment=moment)
